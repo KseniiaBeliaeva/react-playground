@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from "./Person/Person";
-import { Button } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 
 class App extends Component {
   state = {
@@ -55,7 +55,7 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <Button bsStyle="primary" onClick={() => this.switchNameHandler("Lollla!")}>Switch name</Button>
+        <Button color="danger" onClick={() => this.switchNameHandler("Lollla!")}>Switch name</Button>
         <Person
           name={this.state.persons[0].name}
           age={this.state.persons[0].age} />
